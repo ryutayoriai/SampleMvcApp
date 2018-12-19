@@ -1,0 +1,25 @@
+﻿@model SampleMvcApp.Models.ProjectItem
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>View</title>
+</head>
+<body>
+    <div>
+        <p>情報を表示します。</p>
+        <div>@Html.Encode(Model.projectCd)</div>
+        <div>@Html.Encode(Model.projectName)</div>
+        <div>@Html.Encode(Model.tantoName)</div>
+        <div>@Html.Encode(Model.address)</div>
+        <div>@Html.Encode(Model.planDate)</div>
+        <div>@Html.Encode(Model.workdate)</div>
+    </div>
+</body>
+</html>
